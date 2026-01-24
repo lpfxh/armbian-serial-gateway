@@ -1,0 +1,11 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# 配置文件 (如果你不想公开你的配置)
+# serial_config.json 
+# 如果你想提供一个模板，可以保留这个，或者创建一个 config.example.json
+
+# 系统文件
+.DS_Store
+Thumbs.db
