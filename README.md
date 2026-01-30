@@ -48,11 +48,13 @@
 sudo apt update
 sudo apt install socat git python3-pip -y
 pip3 install flask
+```
 ### 2. 获取代码
 ```bash
 cd /opt/
 sudo git clone [https://github.com/lpfxh/armbian-serial-gateway.git](https://github.com/lpfxh/armbian-serial-gateway.git) usb-share
 cd usb-share
+```
 ###3. 设置开机自启 (Systemd)
 创建服务文件 /etc/systemd/system/usb-share.service，内容如下
 ```bash
@@ -73,6 +75,7 @@ WantedBy=multi-user.target
 ```bash
 sudo systemctl enable usb-share.service
 sudo systemctl start usb-share.service
+```
 
 ##📝 使用说明
 进入管理后台 打开浏览器访问：http://<Armbian_IP>:8080
